@@ -1,11 +1,13 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Weather from "./Weather";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <header>Hallo Welt</header>
+        <h1>Hallo Welt</h1>
+        <Weather />
 
         <footer>
           This project was coding by JuSantos and hosted on{" "}
