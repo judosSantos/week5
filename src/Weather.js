@@ -4,17 +4,24 @@ import App from "./App.css";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import FormatteDate from "./FormatteDate";
+import WeatherIcon from "./WeatherIcon";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
+    console.log(response);
     setWeatherData({
       ready: true,
       date: new Date(response.data.time * 1000),
-      temperature: response.data.temperature.current,
+      description: response.data.condition.description,
+      temperature: Math.round(response.data.temperature.current),
+      humidity: Math.round(response.data.temperature.humidity),
+      wind: Math.round(response.data.wind.speed),
       city: response.data.city,
+      icon: response.data.condition.icon,
     });
   }
 
