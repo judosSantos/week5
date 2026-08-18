@@ -12,7 +12,7 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log(response);
+    console.log("ICON DA API:", response.data.condition.icon);
     setWeatherData({
       ready: true,
       date: new Date(response.data.time * 1000),
@@ -23,6 +23,8 @@ export default function Weather(props) {
       city: response.data.city,
       icon: response.data.condition.icon,
     });
+
+    props.onWeatherChange(response.data.condition.icon);
   }
 
   function handleSubmit(event) {

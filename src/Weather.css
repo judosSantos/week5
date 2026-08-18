@@ -4,6 +4,7 @@
   font-family: Arial, sans-serif;
   margin-top: 50px;
   padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .search-form {
   display: flex;
