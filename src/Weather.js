@@ -12,7 +12,6 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-    console.log("ICON DA API:", response.data.condition.icon);
     setWeatherData({
       ready: true,
       date: new Date(response.data.time * 1000),

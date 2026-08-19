@@ -36,7 +36,6 @@ export default function Background(props) {
     "broken-clouds-day": claudyVideo,
     "broken-clouds-night": claudyVideo,
   };
-
   const video = backgrounds[props.code] || baseVideo;
 
   return (
