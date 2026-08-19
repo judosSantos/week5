@@ -29,13 +29,18 @@
 .weather .temperature {
   font-size: 55px;
   font-weight: 200px;
-  margin: 10px 0;
-  vertical-align: middle;
+  line-height: 68px;
 }
 .weather .unit {
-  font-size: 24px;
+  font-size: 20px;
   vertical-align: top;
-  line-height: 60px;
+  line-height: 40px;
+}
+
+.weather a {
+  text-decoration: none;
+  color: #007bff;
+  cursor: pointer;
 }
 
 .weather li {
