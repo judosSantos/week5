@@ -16,7 +16,7 @@ function App() {
           <a
             href="https://github.com/judosSantos/week5.git"
             target="_blank"
-            rel="github link"
+            rel="noreferrer"
           >
             GitHub
           </a>
