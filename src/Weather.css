@@ -32,7 +32,7 @@
   line-height: 68px;
 }
 .weather .unit {
-  font-size: 20px;
+  font-size: 18px;
   vertical-align: top;
   line-height: 40px;
 }
@@ -42,7 +42,7 @@
   border: none;
   color: #007bff;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0;
 }
 
