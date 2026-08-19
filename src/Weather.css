@@ -37,6 +37,15 @@
   line-height: 40px;
 }
 
+.btnUnit {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 0;
+}
+
 .weather a {
   text-decoration: none;
   color: #007bff;

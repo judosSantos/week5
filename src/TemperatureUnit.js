@@ -20,9 +20,9 @@ export default function TemperatureUnit(props) {
 
         <span className="unit">
           °C |{" "}
-          <a href="#" onClick={showFahrenheit}>
+          <button className="btnUnit" onClick={showFahrenheit}>
             °F
-          </a>
+          </button>
         </span>
       </div>
     );
@@ -34,9 +34,9 @@ export default function TemperatureUnit(props) {
         <span className="temperature">{Math.round(fahrenheit)}</span>
 
         <span className="unit">
-          <a href="#" onClick={showCelsius}>
+          <button className="btnUnit" onClick={showCelsius}>
             °C
-          </a>{" "}
+          </button>{" "}
           | °F
         </span>
       </div>
