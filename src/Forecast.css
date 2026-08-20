@@ -24,9 +24,3 @@
   padding-left: 5px;
   color: rgba(2, 2, 2, 0.4);
 }
-
-@media (max-width: 575px) {
-  .forecast-extra {
-    display: none;
-  }
-}

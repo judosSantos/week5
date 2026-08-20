@@ -20,10 +20,8 @@ export default function Forecast(props) {
         <WeatherForecastDay data={forecast[0]} />{" "}
         <WeatherForecastDay data={forecast[1]} />{" "}
         <WeatherForecastDay data={forecast[2]} />{" "}
-        <div className="forecast-extra">
-          <WeatherForecastDay data={forecast[3]} />{" "}
-          <WeatherForecastDay data={forecast[4]} />{" "}
-        </div>
+        <WeatherForecastDay data={forecast[3]} />{" "}
+        <WeatherForecastDay data={forecast[4]} />{" "}
       </div>
     );
   } else {
