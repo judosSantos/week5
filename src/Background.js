@@ -6,13 +6,15 @@ import dayVideo from "./videos/day.mp4";
 import nightVideo from "./videos/night.mp4";
 import rainyVideo from "./videos/rainy.mp4";
 import snowingVideo from "./videos/snowing.mp4";
+import mistVideo from "./videos/mist.mp4";
+import cleardayVideo from "./videos/clearday.mp4";
 
 export default function Background(props) {
   const backgrounds = {
-    "clear-sky-day": dayVideo,
+    "clear-sky-day": cleardayVideo,
     "clear-sky-night": nightVideo,
 
-    "few-clouds-day": claudyVideo,
+    "few-clouds-day": dayVideo,
     "few-clouds-night": claudyVideo,
 
     "scattered-clouds-day": claudyVideo,
@@ -30,10 +32,10 @@ export default function Background(props) {
     "snow-day": snowingVideo,
     "snow-night": snowingVideo,
 
-    "mist-day": claudyVideo,
-    "mist-night": claudyVideo,
+    "mist-day": mistVideo,
+    "mist-night": mistVideo,
 
-    "broken-clouds-day": claudyVideo,
+    "broken-clouds-day": dayVideo,
     "broken-clouds-night": claudyVideo,
   };
   const video = backgrounds[props.code] || baseVideo;
