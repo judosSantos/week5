@@ -23,13 +23,11 @@ export default function WeatherIcon(props) {
     "broken-clouds-night": "CLOUDY",
   };
 
-  console.log("CODE:", props.code);
-  console.log("ICON:", defaults[props.code]);
   return (
     <ReactAnimatedWeather
       icon={defaults[props.code]}
       color="black"
-      size={60}
+      size={props.size}
       animate={true}
     />
   );
