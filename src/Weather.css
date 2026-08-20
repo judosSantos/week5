@@ -46,16 +46,11 @@
   padding: 0;
 }
 
-.weather a {
-  text-decoration: none;
-  color: #007bff;
-  cursor: pointer;
-}
-
 .weather li {
   list-style-type: none;
   font-size: 14px;
   text-align: left;
+  margin-left: 20px;
 }
 footer {
   text-align: center;
@@ -66,5 +61,11 @@ footer {
 @media (max-width: 375px) {
   footer {
     font-size: 11px !important;
+  }
+  .btnSearch {
+    background: #0a6ffd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
   }
 }
