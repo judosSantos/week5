@@ -3,7 +3,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Weather from "./Weather";
 import Background from "./Background";
-import Forecast from "./Forecast";
 
 function App() {
   const [background, setBackground] = useState(null);
